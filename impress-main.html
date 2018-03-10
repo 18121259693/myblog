@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js</title>
+	<link href="assets/css/impress-demo.css" rel="stylesheet" />
+</head>
+<!-- 这是一个基于impress官方demo修改的作品 -->
+<body class="impress-not-supported">
+<!-- 若初始化失败，说明浏览器不支持，会看到这段话，因为这段话在初始化成功后会被隐藏，通常看不到。 -->
+<div class="fallback-message">
+    <p>你的电脑的浏览器<b>已经out了！</b>，居然还有人在使用<b>IE浏览器进行 网 上 冲 浪？</b></p>
+    <p>赶快去下载一个高级货~ 比如<b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b>或者UC、360、qq也还可以</p>
+</div>
+<!-- 正式开始 -->
+<div id="impress" data-autoplay="7">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+        <q>
+            <font color="84C1FF">Boy</font> <font color="E6CAFF">boy</font> = <font color="ff7575">new</font> <font color="84C1FF">Boy()</font>;
+            <br>
+            <font color="E6CAFF">boy</font>.<font color="ACD6FF">name</font> = <font color="E0E0E0">"张明辉"</font>;
+            <br>
+            <font color="E6CAFF">boy</font>.<font color="ACD6FF">age</font> = <font color="FFAF60">26</font>;
+            <br>
+            <font color="E6CAFF">boy</font>.<font color="ACD6FF">setIQ</font>(<font color="FFAF60">120</font>);
+            <br><br><br>
+            <font color="CE0000">ERROR : CANNOT SET IQ 120 ! </font>
+        </q>
+    </div>
+<!--     <div class="step slide" data-x="0" data-y="-1500">
+        <q>你是否也认为在<strong>现代浏览器</strong>里，表现形式<strong>不应该</strong>受‘传统’的幻灯片模式的<strong>限制</strong>？</q>
+    </div>
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>你是否希望让你的演讲以<strong>令人震撼</strong>的视觉效果来<strong>打动你的观众</strong>？</q>
+    </div> -->
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">大家好，我是</span>
+        <h1>张明辉</h1>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>
+            今年<strong>26</strong> 
+            <br>
+            职业 <strong>程序员</strong> 
+            <br>
+           <span class="footnote">不是 修电脑！</span>
+        </p>
+    </div>
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>估计是属于<b>大</b> <span class="thoughts">器晚成</span>的那种</p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>所以现在还没到成的时候</p>
+    </div>
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
+        <p>总想找一个<br> <b class="positioning">钱多</b>, <b class="rotating">事少</b>, <b class="scaling">离家近</b> 的工作</p>
+    </div>
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>那么  佛系小青年 <br> <b class="imagination">了解一下？</b></p>
+    </div>
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>那就加个微信呗</p>
+        <q>18121259693</q>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>哦、对了...</p>
+    </div>
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">想知道</span><span class="you">这个</span><span class="noticed">页面</span><span class="its">是</span> <span class="in">怎么弄出来的吗？</p>
+        <span class="footnote"><a href="impress-demo.html" target="_blank">戳这查看汉化demo</a></span>
+        <br>
+        <span class="footnote"><a href="https://github.com/impress/impress.js" target="_blank">或者戳这直接看源码</a></span>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+<div class="hint">
+    <p>按 '空格' 或者 方向 '←' '→' 来切换.</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>可以向 ←左 或者 右→ 滑动进行预览</p>";
+    }
+</script>
+<!-- 先引入然后初始化 -->
+<script src="assets/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
