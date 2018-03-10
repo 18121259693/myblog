@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js</title>
+	<link href="assets/css/impress-demo.css" rel="stylesheet" />
+</head>
+<!-- 这是一个基于impress官方demo修改的作品 -->
+<body class="impress-not-supported">
+<!-- 若初始化失败，说明浏览器不支持，会看到这段话，因为这段话在初始化成功后会被隐藏，通常看不到。 -->
+<div class="fallback-message">
+    <p>你的电脑的浏览器<b>已经out了！</b>，居然还有人在使用<b>IE浏览器进行 网 上 冲 浪？</b></p>
+    <p>赶快去下载一个高级货~ 比如<b>Chrome</b>, <b>Safari</b> 或者 <b>Firefox</b>或者UC、360、qq也还可以</p>
+</div>
+<!-- 正式开始 -->
+<div id="impress" data-autoplay="7">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" data-autoplay="10">
+        <q>你是否已经<b>厌倦</b>了那些传统的幻灯片形式的表现方式？</q>
+    </div>
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>你是否也认为在<strong>现代浏览器</strong>里，表现形式<strong>不应该</strong>受‘传统’的幻灯片模式的<strong>限制</strong>？</q>
+    </div>
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>你是否希望让你的演讲以<strong>令人震撼</strong>的视觉效果来<strong>打动你的观众</strong>？</q>
+    </div>
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">那么，你应该试一试</span>
+        <h1>impress.js<sup>*</sup></h1>
+        <span class="footnote"><sup>上面的 * </sup>并没有啥特别意思</span>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>它是一个<strong>展现工具</strong> <br>是受<a href="http://prezi.com/">prezi.com</a>的启发 <br>
+            使用了现代浏览器里支持的<br><strong>CSS3 transforms 和 transitions</strong>功能。</p>
+    </div>
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>秀出你的<b>大</b> <span class="thoughts">想法</span></p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>或<b>小</b>创意</p>
+    </div>
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-z="0" data-rotate="270" data-scale="6">
+        <p>通过 <b class="positioning">定位</b>, <b class="rotating">旋转</b> 和 <b class="scaling">缩放</b> 在这张无穷大的画布上</p>
+    </div>
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>唯一 <b>需要的</b> 是你的 <b class="imagination">想象力</b></p>
+    </div>
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>什么？还想知道更多</p>
+        <q><a href="http://github.com/impress/impress.js">点这儿~</a>, 查看源码!</q>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>哦、对了...</p>
+    </div>
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">是否</span><span class="you">你</span><span class="noticed">注意到</span><span class="its">它是</span> <span class="in">有</span> <b>3D效果的<sup>*</sup></b>?</p>
+        <span class="footnote">* 隔壁 prezi 并没有哦(嘿嘿~手动滑稽)</span>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10">
+    </div>
+</div>
+
+<div id="impress-toolbar"></div>
+<div class="hint">
+    <p>按 '空格' 切换幻灯片. <br/>
+       按 'P' 查看控制台.</p>
+</div>
+<script>
+    if ("ontouchstart" in document.documentElement) { 
+        document.querySelector(".hint").innerHTML = "<p>可以向 ←左 或者 右→ 滑动进行预览</p>";
+    }
+</script>
+<!-- 先引入然后初始化 -->
+<script src="assets/js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
