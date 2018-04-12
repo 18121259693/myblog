@@ -79,15 +79,23 @@
 
 <div id="impress-toolbar"></div>
 <div class="hint">
-    <p>按 '空格' 或者 方向 '←' '→' 来切换.</p>
+    <p>鼠标 '单击' 或 键盘 '空格' 或 方向'←''→'切换.</p>
 </div>
+
 <script>
     if ("ontouchstart" in document.documentElement) { 
-        document.querySelector(".hint").innerHTML = "<p>可以向 ←左 或者 右→ 滑动进行预览</p>";
+        document.querySelector(".hint").innerHTML = "<p>单击切换下一张</p>";
     }
 </script>
 <!-- 先引入然后初始化 -->
 <script src="assets/js/impress.js"></script>
-<script>impress().init();</script>
+<script>
+    // 初始化
+    impress().init();
+    //单击切换下一张
+    document.addEventListener('click', function(){
+       next();
+    })
+</script>
 </body>
 </html>

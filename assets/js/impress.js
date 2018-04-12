@@ -3906,3 +3906,7 @@
     } // If toolbar
 
 } )( document );
+
+function next(){
+    window.impress().next();
+}
