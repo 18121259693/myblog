@@ -53,7 +53,12 @@
       <div style="height: 100%">
         <iframe id="iframe" src="impress-main.html" style="width: 100%;height: 100%"></iframe>
       </div>
-      
+      <div id="goNext" style="right: 35px;bottom: 25px;position: absolute;background-color: #000000;opacity: 0.3;z-index: 1000;" onclick="goNext()">
+          <span id="spanNext" style="font-size: 250%;color: #FFFFFF;opacity: 0.8;margin: 20px">下一页</span>
+      </div>
+      <div id="goPrev" style="left: 35px;bottom: 25px;position: absolute;background-color: #000000;opacity: 0.3;z-index: 1000;" onclick="goPrev()">
+          <span id="spanPrev" style="font-size: 250%;color: #FFFFFF;opacity: 0.8;margin: 20px">上一页</span>
+      </div>
         <!-- <hr> -->
     <!-- </div> -->
 <!-- </div> -->
@@ -96,6 +101,12 @@
   $(function(){
     $('#iframe').focus();//获取焦点
   });
+  function goNext(){
+    $("#iframe")[0].contentWindow.next();
+  }
+  function goPrev(){
+    $("#iframe")[0].contentWindow.prev();
+  }
 </script>
 </body>
 </html>

@@ -78,13 +78,12 @@
 </div>
 
 <div id="impress-toolbar"></div>
-<div class="hint">
+<!-- <div class="hint">
     <p>鼠标 '单击' 或 键盘 '空格' 或 方向'←''→'切换.</p>
-</div>
-
+</div> -->
 <script>
     if ("ontouchstart" in document.documentElement) { 
-        document.querySelector(".hint").innerHTML = "<p>单击切换下一张</p>";
+        // document.querySelector(".hint").innerHTML = "<p>单击切换下一张</p>";
     }
 </script>
 <!-- 先引入然后初始化 -->
@@ -92,10 +91,10 @@
 <script>
     // 初始化
     impress().init();
-    //单击切换下一张
-    document.addEventListener('click', function(){
-       next();
-    })
+    // //单击切换下一张
+    // document.addEventListener('click', function(){
+    //    next();
+    // })
 </script>
 </body>
 </html>

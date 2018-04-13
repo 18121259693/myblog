@@ -3910,3 +3910,6 @@
 function next(){
     window.impress().next();
 }
+function prev(){
+    window.impress().prev();
+}
